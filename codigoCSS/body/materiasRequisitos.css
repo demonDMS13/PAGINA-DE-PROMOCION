@@ -1,0 +1,51 @@
+
+.materiasRequisitos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;            
+    padding: 30px 40px;   
+    align-items: start;
+}
+
+
+.materias, .requisitos {
+    background: #ffffff;
+    padding: 22px 25px;   
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+}
+
+
+.materiasRequisitos h2 {
+    font-size: 1.6rem;
+    color: #1a237e;
+    margin-bottom: 12px;   
+    text-align: center;
+}
+
+
+.materiasRequisitos ul h3 {
+    font-size: 1.15rem;
+    color: #0d1b6b;
+    margin: 15px 0 8px;   
+}
+
+
+.materiasRequisitos ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.materiasRequisitos li {
+    font-size: 1.05rem;
+    line-height: 1.55;     
+    margin-bottom: 5px;    
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    .materiasRequisitos {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}

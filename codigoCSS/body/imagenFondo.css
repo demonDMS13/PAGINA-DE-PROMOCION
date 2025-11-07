@@ -1,0 +1,74 @@
+.imagenInstituto {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background-image: url("../../multimedia/imagenInstituto/fotoInstitutoInterior.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imagenInstituto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.contenidoImagen {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+
+.imagenInstituto h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.imagenInstituto h3 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: #00b4ff;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+@media (max-width: 768px) {
+    .imagenInstituto {
+        height: 60vh;
+        background-position: center top;
+    }
+
+    .imagenInstituto h2 {
+        font-size: 24px;
+    }
+
+    .imagenInstituto h3 {
+        font-size: 18px;
+    }
+}

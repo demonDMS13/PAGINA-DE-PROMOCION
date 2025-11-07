@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: rgb(3, 74, 119);
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* <-- antes era relative */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* se asegura de quedar sobre todo */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 14px;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.logoInsignia {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px; 
+}
+
+.logoInsignia img {
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px; 
+    }
+
+    .logoInsignia {
+        position: static; 
+        transform: none;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .logoInsignia img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+
+    .logoInsignia img {
+        width: 60px;
+        height: 60px;
+    }
+}
+

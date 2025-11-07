@@ -1,0 +1,56 @@
+
+.Oportunidades {
+    display: flex;
+    gap: 40px;
+    padding: 50px 20px;
+    align-items: center;
+}
+
+.figuraIngeSistemas {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.figuraIngeSistemas figure {
+    text-align: center;
+}
+
+.figuraIngeSistemas img {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.Oportunidades article {
+    flex: 1;
+}
+
+
+.Oportunidades h2 {
+    font-size: 1.7rem;
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+.Oportunidades ul {
+    padding-left: 20px;
+}
+
+.Oportunidades ul li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #333;              
+    margin-bottom: 10px;      
+}
+
+@media (max-width: 800px) {
+    .Oportunidades {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Oportunidades ul {
+        text-align: left;
+    }
+}
